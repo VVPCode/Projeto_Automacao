@@ -1,0 +1,40 @@
+Tarefa,Tipo,Dado
+Abrir menu iniciar,click,iniciar
+Esperar,espera,2
+Pesquisar explorador de arquivos,texto,explorador de arquivos
+Esperar,espera,3
+Abrir explorador de arquivos,tecla,enter
+Esperar,espera,5
+Selecionar pesquisa de caminhos do explorador de arquivos,click,barra_de_pesquisa_1
+Esperar,espera,3
+Pesquisar área de trabalho,texto,Desktop
+Confirmar,tecla,enter
+Esperar,espera,3
+Pesquisar em área de trabalho,click,barra_de_pesquisa_2
+Esperar,espera,3
+Digitar Projeto de automação,texto,Projeto_automacao
+Esperar,espera,3
+Abrir pasta do projeto,db_click,icone_pasta_projeto
+Esperar,espera,3
+Abrir pasta de exemplo,db_click,icone_pasta_exemplo
+Esperar,espera,3
+Menu de novos itens,click,menu_novos_itens
+Esperar,espera,3
+Documento de texto,click,novo_txt
+Esperar,espera,3
+Nomeando arquivo,texto,exemplo
+Esperar,espera,3
+Confirmar nome do arquivo,tecla,enter
+Esperar,espera,3
+Abrir arquivo criado,db_click,arquivo_exemplo
+Esperar,espera,3
+Digitar texto,texto,"Oi, este eh um exemplo do funcionamento do projeto."
+Quebrar linha,tecla,enter
+Digitar texto,texto,"Agora voce pode criar tarefas para serem realizadas de forma automática com esse projeto."
+Esperar,espera,5
+Fechar arquivo,atalho,alt+f4
+Esperar,espera,3
+Clicar fora do arquivo,click,clicar_fora
+Seleciona arquivo criado,click,arquivo_exemplo
+Esperar,espera,3
+Deleta arquivo criado,tecla,delete

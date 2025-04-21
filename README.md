@@ -23,7 +23,7 @@ Este projeto tem como objetivo automatizar tarefas repetitivas no Windows usando
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
+   git clone https://github.com/VVPCode/Projeto_Automacao.git
    cd seu-repo
    ```
 
@@ -47,14 +47,42 @@ Este projeto tem como objetivo automatizar tarefas repetitivas no Windows usando
 
 6. Ao final, será gerado um relatório `relatorio.xlsx` com os resultados das tarefas.
 
-## 📝 Exemplo de tarefas.csv
+## 🧪 Exemplo de Execução da Automação
 
+Abaixo está um exemplo real de automação que pode ser feita com este projeto. A sequência de ações está definida no arquivo `tarefas.csv`:
+
+### 🔄 Fluxo Automatizado:
+
+1. Abre o menu iniciar
+2. Pesquisa por "explorador de arquivos"
+3. Abre o explorador
+4. Navega até a área de trabalho, onde o usuário deve colocar a pasta do projeto para que o exemplo funcione
+5. Entra em uma pasta chamada "Projeto_automacao"
+6. Cria um novo documento de texto
+7. Nomeia o arquivo como `exemplo.txt`
+8. Abre o arquivo e digita um texto explicativo
+9. Fecha o arquivo
+10. Exclui o arquivo criado
+
+Essa automação mostra como é possível reproduzir interações reais de um usuário com o sistema operacional usando PyAutoGUI e um CSV com instruções.
+
+---
+
+📂 Exemplo de tarefas do CSV:
 ```csv
 Tarefa,Tipo,Dado
 Abrir menu iniciar,click,iniciar
-Esperar,espera,2
-Pesquisar explorador,texto,explorador de arquivos
-...
+Pesquisar explorador de arquivos,texto,explorador de arquivos
+Abrir explorador de arquivos,tecla,enter
+Pesquisar área de trabalho,texto,Desktop
+Abrir pasta do projeto,db_click,icone_pasta_projeto
+Documento de texto,click,novo_txt
+Nomeando arquivo,texto,exemplo
+Abrir arquivo criado,db_click,arquivo_exemplo
+Digitar texto,texto,"Oi, este eh um exemplo do funcionamento do projeto."
+Fechar arquivo,atalho,alt+f4
+Seleciona arquivo criado,click,arquivo_exemplo
+Deleta arquivo criado,tecla,delete
 ```
 
 ## ✅ Tipos de Tarefas Suportados
